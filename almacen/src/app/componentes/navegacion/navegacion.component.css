@@ -1,0 +1,7 @@
+.navbar .nav-link, .navbar .navbar-brand, .navbar .dropdown-menu a {
+    color: white !important;
+}
+
+.navbar .dropdown-menu {
+    background-color: #343a40; /* Fondo oscuro para que combine */
+}

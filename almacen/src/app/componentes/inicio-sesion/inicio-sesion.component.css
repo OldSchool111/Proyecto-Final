@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right, #007bff, #6c63ff); /* Fondo degradado */
+    color: #333; /* Color del texto */
+    font-family: 'Arial', sans-serif;
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* Asegura que ocupe toda la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.card {
+    border: none; /* Elimina los bordes de la tarjeta */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo de la tarjeta */
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    position: relative;
+    top: -150px; /* Mueve el formulario un poco hacia arriba */
+}
+
+.card-body h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center; /* Centra el texto */
+}
+
+.form-control {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Efecto brillante */
+    border-color: #007bff; /* Color del foco */
+}
+
+.btn-primary {
+    background-color: #6c63ff; /* Color personalizado del botón */
+    border: none;
+    border-radius: 5px; /* Bordes del botón */
+    padding: 10px 20px; /* Más espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.btn-primary:hover {
+    background-color: #5a52d6; /* Color al pasar el mouse */
+}
+
+.text-primary {
+    color: #6c63ff !important; /* Color personalizado del texto */
+}

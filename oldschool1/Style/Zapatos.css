@@ -1,0 +1,241 @@
+body { 
+    background-image: url('https://i.pinimg.com/originals/2e/08/61/2e08617f3f0e57bc5b0343e37b56d7bc.jpg'); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos dentro del header se acomoden en más de una fila */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-style: inset;
+    border-color: #000000b7;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    max-height: max-content;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenido {
+    padding: auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+.box {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201015/pngtree-white-polygonal-mosaic-triangular-background-abstract-light-gray-background-low-poly-image_418752.jpg);   
+}
+
+.contenedor {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 100%;
+}
+
+.submit {
+    background-color: rgba(133, 133, 133, 0.514);
+}
+
+
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+.category {
+    text-align: center;
+    overflow: hidden;
+}
+
+.category img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.1);
+}
+
+.category a {
+    display: block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.category a:hover {
+    color: #000000;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar img  {
+    vertical-align: middle;
+    width: 60px; 
+    height: 40px; 
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .box {
+        max-width: 200px; 
+    }
+
+    header {
+        justify-content: center; 
+    }
+
+    header nav ul li {
+        margin-left: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        grid-template-columns: 1fr; 
+    }
+
+    .box {
+        max-width: 100%; 
+    }
+
+    header nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+}

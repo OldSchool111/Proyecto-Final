@@ -1,0 +1,61 @@
+
+
+body {
+    background-color: #f8f9fa; /* Fondo claro */
+    font-family: Arial, sans-serif;
+}
+
+.container-sm {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.container-sm h2 {
+    color: #2cc8dc; /* Azul vibrante */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    text-align: left;
+    font-weight: bold;
+    color: #333333; /* Texto oscuro */
+}
+
+.form-control {
+    background-color: #f9f9f9; /* Fondo del input */
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #333333; /* Texto del input */
+}
+
+.form-control:focus {
+    border-color: #4b4bee; /* Azul en el foco */
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(75, 75, 238, 0.5); /* Sombra azul */
+}
+
+.btn-primary {
+    background-color: #6c63ff; /* Azul vibrante */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #3a3acd; /* Azul más oscuro al pasar el cursor */
+}
+.text-primary {
+    color: #6c63ff !important; /* Color personalizado del texto */
+}

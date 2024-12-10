@@ -1,0 +1,59 @@
+body.login {
+    background-image: url('https://i.pinimg.com/originals/2e/08/61/2e08617f3f0e57bc5b0343e37b56d7bc.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.wrapper-login {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 60px 40px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-floating-label .form-control {
+    border-radius: 30px;
+    padding: 15px 20px;
+}
+.form-action input[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 0;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.form-action input[type="submit"]:hover {
+    background: #2980b9;
+}
+.text-center {
+    color: #333;
+    margin-bottom: 30px;
+}
+.link {
+    color: #3498db;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.olvido {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.olvido a {
+    color: #3498db;
+    font-size: 14px;
+}

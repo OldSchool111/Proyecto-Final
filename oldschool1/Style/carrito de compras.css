@@ -1,0 +1,169 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+/* Estilos del encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+}
+
+/* Estilos para el título del encabezado */
+header h1 {
+  margin: 0;
+}
+
+/* Estilos para la barra de navegación */
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+header nav ul li {
+  margin-left: 20px;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para el título de la página */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Estilos para el input de búsqueda */
+.search-bar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #ddd; /* Borde gris claro */
+  border-radius: 25px;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: border-color 0.3s ease;
+}
+
+/* Cambia el color del borde del input cuando está enfocado */
+.search-bar input:focus {
+  border-color: #000000; /* Borde rojo cuando está enfocado */
+  outline: none;
+}
+
+/* Estilos para el grid de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en cada fila */
+  gap: 20px; /* Espacio entre los elementos del grid */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Estilos para cada tarjeta de producto */
+.product-card {
+  background-color: white;
+  border-radius: 15px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Efecto cuando el ratón pasa sobre una tarjeta */
+.product-card:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Estilos para la imagen del producto */
+.product-image img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: 400px;
+  border-bottom: 1px solid #e0e0e0; /* Línea debajo de la imagen */
+}
+
+/* Estilos para los detalles del producto */
+.product-details {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el nombre del producto */
+.product-details h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333; /* Texto gris oscuro */
+}
+
+/* Estilos para el precio del producto */
+.price {
+  font-size: 1.4em;
+  color: #000000; /* Texto negro */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el botón de añadir al carrito */
+.add-to-cart-btn {
+  background-color:#C70039; /* Fondo rojo */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 30px; /* Esquinas redondeadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto cuando el ratón pasa sobre el botón */
+.add-to-cart-btn:hover {
+  background-color: #000000; /* Fondo rojo más oscuro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del botón */
+}
+
+/* Efecto cuando se presiona el botón */
+.add-to-cart-btn:active {
+  transform: scale(0.95); /* Reduce ligeramente el tamaño del botón */
+}
+
+/* Adaptaciones para pantallas más pequeñas */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 columna en lugar de 3 */
+  }
+}
+      

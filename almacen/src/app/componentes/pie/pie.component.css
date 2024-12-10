@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    position: fixed; /* Fija el pie */
+    bottom: 0; /* Siempre en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  

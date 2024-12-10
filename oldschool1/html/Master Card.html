@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Card</title>
+    <link href="Style/Master Card.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Datos de pago</h1>
+<img src="IMAGENES/MasterCard.png" alt="MasterCard" height="80px" width="90px">
+  
+<form action="login.php" method="post">
+
+            <label for="Nombre">Nombre del titular </label>
+            <input type="text" id="Nombre" name="Nombre" required>
+
+            <label for="Codigo">Codigo de seguridad</label>
+            <input type="number" id="Codigo" name="Codigo" required>
+            
+            <label for="Numero">Numero de tarjeta</label>
+            <input type="number" id="Numero" name="Numero" required>
+
+            <label for="TipoCuenta">Tipo de cuenta</label>
+            <select id="TipoCuenta" name="TipoCuenta" required>
+                <option value="corriente">Corriente</option>
+                <option value="ahorros">Ahorros</option>
+            </select>
+
+            <label for="Fecha">Fecha de expedición</label>
+            <input type="date" id="Fecha" name="Fecha" required>
+
+            <button type="submit">Pagar</button>
+        
+        </form>
+
+    </div>
+</body>
+</html>

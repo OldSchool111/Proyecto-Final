@@ -1,0 +1,59 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(/IMAGENES/LOGOSYJ.png);
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 800%;
+    max-width: 600px;
+}
+
+.payment-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-option {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0  5px rgba(0, 0, 0, 0.1,0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 2px;
+
+
+}
+
+.payment-option:hover {
+    transform: scale(1.05);
+    background-color: #d9d9d9;
+}
+
+.payment-option a {
+    text-decoration: none;
+}
+
+.payment-img {
+    height: 70px;
+    width: auto;
+}
+
